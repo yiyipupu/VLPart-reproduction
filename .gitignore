@@ -50,3 +50,12 @@ _darcs
 /projects/*/datasets
 #/models
 /snippet
+
+# Reproduction artifacts
+/cache/
+/checkpoints/
+/weights/
+/env/
+/outputs/
+*.pt
+*.ckpt
