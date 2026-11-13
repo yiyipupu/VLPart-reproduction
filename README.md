@@ -162,12 +162,12 @@ PY
 
 [论文 Going Denser with Open-Vocabulary Part Segmentation](https://arxiv.org/abs/2305.11173)；[上游 facebookresearch/VLPart](https://github.com/facebookresearch/VLPart)，固定 commit `e48903ab0cb38e4dd5be7ce7da2e36c855eff53f`。研究通过联合部件、对象、图像级数据及 DINO 对应关系生成的伪部件标注扩展泛化；普通 detector 推理无需重新执行 DINO 解析。涉及 Pascal Part、PartImageNet、PACO、VOC、COCO、LVIS、ImageNet。原文档见 [README.upstream.md](README.upstream.md)、[MODEL_ZOO.md](MODEL_ZOO.md)。保留 [MIT LICENSE](LICENSE) 及上游第三方许可说明；CLIP、Detic、DINO 等遵循各自许可证。
 
-### 给师兄的操作顺序
+### 操作顺序
 
-1. 把本仓库链接发给师兄，按第 1–3 节配置 `/data/yukun/VLPart`、4090 环境和两份权重。
+1. 按第 1–3 节配置 `/data/yukun/VLPart`、4090 环境和两份权重。
 2. 新终端先执行下方激活命令，并重新设置第 1 节的缓存环境变量，再跑第 6 节公开图片 demo。
 3. 确认退出码成功、终端预测实例数、输出图片实际存在并人工打开检查后，再准备自有数据。
-4. 与师兄确认原始标注格式、对象/部件类别及实例定义；按第 4–5 节准备和检查 COCO 标注。
+4. 确认原始标注格式、对象/部件类别及实例定义；按第 4–5 节准备和检查 COCO 标注。
 5. 先执行 small，再执行 val；保存环境版本、日志、预测和指标，回传实际结果。不要提前声称 4090 或真实数据已验证。
 
 ```bash
