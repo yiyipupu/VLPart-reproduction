@@ -14,7 +14,7 @@ export TORCH_HOME=$ROOT/cache/torch XDG_CACHE_HOME=$ROOT/cache
 export MPLCONFIGDIR=$ROOT/cache/matplotlib
 ```
 
-仓库包含完整上游源码、configs、demo、tools 和 metadata；不包含权重、环境、缓存或私有数据。
+仓库包含完整上游源码、configs、demo、tools 和 metadata；不包含权重、环境、缓存或私有数据。 
 
 ## 2. 配置 RTX 4090 环境（未实机验证）
 
